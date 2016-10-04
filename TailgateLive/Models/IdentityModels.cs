@@ -32,5 +32,9 @@ namespace TailgateLive.Models
         public DbSet<Team> TeamDb { get; set; }
         public DbSet<Event> EventDb { get; set; }
         public DbSet<User> UserDb { get; set; }
+
+        public System.Data.Entity.DbSet<TailgateLive.Models.UsersEvents> UsersEvents { get; set; }
+
+        public System.Data.Entity.DbSet<TailgateLive.Models.UsersTeams> UsersTeams { get; set; }
     }
 }
