@@ -17,7 +17,7 @@ namespace TailgateLive.Controllers
         // GET: Events
         public ActionResult Index()
         {
-            var eventDb = db.EventDb.Include(@ => @.User);
+            var eventDb = db.EventDb.Include(x => x.User);
             return View(eventDb.ToList());
         }
 
